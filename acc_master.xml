@@ -1,0 +1,28 @@
+<acc_master xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="2_3.xsd">
+	<records>
+		<account_no>10001</account_no>
+		<accountHolder_name>Rajesh Sharma </accountHolder_name>
+		<accountHolder_address>Mumbai</accountHolder_address>
+	</records>
+	<records>
+		<account_no>10002</account_no>
+		<accountHolder_name>Aniket Vishwas</accountHolder_name>
+		<accountHolder_address>Delhi</accountHolder_address>
+	</records>
+	<records>
+		<account_no>10003</account_no>
+		<accountHolder_name>Abhisekh Kumar</accountHolder_name>
+		<accountHolder_address>Pune</accountHolder_address>
+	</records>
+	<records>
+		<account_no>10004</account_no>
+		<accountHolder_name>Shivani Kumari</accountHolder_name>
+		<accountHolder_address>Gandhinagar</accountHolder_address>
+	</records>
+	<records>
+		<account_no>10005</account_no>
+		<accountHolder_name>Anjali Mishra</accountHolder_name>
+		<accountHolder_address>Mumbai</accountHolder_address>
+	</records>
+</acc_master>

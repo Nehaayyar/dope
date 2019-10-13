@@ -1,0 +1,62 @@
+********************************************************************************************************
+FILE        : Discount according to percentage
+AUTHOR NAME : Arnab Das
+
+**********************************************************************************************************
+
+BEGIN
+	  DECLARE percentage,course AS INTEGER
+	  DECLARE CONSTANT course_A_price = 6000
+	  DECLARE CONSTANT course_B_price = 8000
+	  DECLARE discount,price,final_price AS FLOAT
+	  DECLARE name AS STRING
+	
+	  PRINT "paercentage"
+	  ACCEPT percentage
+	  PRINT "Select Your course"
+	  PRINT "press 1 for Course and  2 for Course B"
+	  ACCEPT course
+	  PRINT "Your Name"
+	  ACCEPT name
+	
+	  discount = getDiscount(percentage)
+	
+	  IF(COURSE == 1) THEN									//when user choose for course A 
+			price =  course_A_price * discount
+			final_price = course_A_price - price
+	  ELSE IF(COURSE == 2) THEN								//when user choose for course B
+			price =  course_A_price * discount
+			final_price = course_B_price - price
+	  ELSE 
+			PRINT "enter correct option"
+	  END IF
+	  
+	  //----Printing User Details----------//
+
+	  PRINT "Your name is ", name
+	  PRINT "Your choosen course is:"
+	  IF (course == 1) THEN
+			PRINT "course A"
+	  ELSE	
+			PRINT "course B"
+			
+	  PRINT "Your discounted price is ",final_price
+	
+END
+
+		
+
+getDiscount(percentage)
+
+SUB
+	  IF (percentage > 90)
+			RETURN 0.50								// 50% = 0.5
+	  ELSE IF( percentage => 80 and percentage <= 89)
+			RETURN 0.40								// 40% = 0.4
+	  ELSE IF (percentage => 70 and percentage <=79)
+			RETURN 0.30
+	  ELSE											// 30% = 0.3
+			RETURN 0								// because discount will be 0%
+	
+END SUB
+		

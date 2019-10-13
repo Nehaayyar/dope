@@ -1,0 +1,28 @@
+table {
+    border-style: solid;
+	border-color: red;
+	background-color: aqua;
+}
+input
+{
+	font-size: 15px;
+	
+}
+.head
+{
+	font-size: 30px;
+	text-align: center;
+	font-family: arial;
+	
+	
+}
+
+body
+{
+	padding-top : 100px;
+}
+
+.textStyle
+{
+	font-size : 20px;
+}

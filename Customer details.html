@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Customer Loan Details</title>
+		<script src="cust_dtls.js">
+		</script>
+		<link href="cust_dtls.css" type="text/css" rel="stylesheet"/>
+	</head>
+	
+	<body>
+		<form name = "form" action = "javascript:fun1()" >
+			<table align = center>
+				<tr>
+					<td colspan="2" class= "head" ><p>Loan Application Form<p></td>
+				</tr>
+				<tr>
+					<td class = "textStyle">Do You have a loan already</td>
+					<td>
+						<input type = "radio" name ="ask_loan" id = "id_ask_loan" value = "yes"  autofocus required >Yes</input>
+						<input type = "radio" name ="ask_loan" id = "id_ask_loan" value = "no" >No</input>
+					</td>
+				</tr>	
+				
+				<tr>
+					<td class = "textStyle">Customer Name:</td>
+					<td>
+						<input type = "text" name ="name" id = "id_name" pattern="[A-Za-z]{1,20}"  autofocus required placeholder = "Enter your name"></input>
+					</td>
+				</tr>
+				
+				<tr>
+					<td class = "textStyle">Mobile Number</td>
+					<td>
+						<input type = "text" name ="mob" id = "id_mob" pattern="[0-9]{10}" required placeholder = "Enter Mobile No" ></input>
+					</td>
+				</tr>
+				
+				<tr>
+					<td class = "textStyle">EMailId</td>
+					<td>
+						<input type = "email" name ="email" id = "id_email" required placeholder = "abc@xyz.com"></input>
+					</td>
+				</tr>
+				
+				<tr>
+					<td class = "textStyle">Proof of Identity:</td>
+					<td>
+						<input type = "checkbox" name ="ask_loan" required>PAN Card</input>
+						<input type = "checkbox" name ="ask_loan" >Voters Id</input>
+						<br>
+						<input type = "checkbox" name ="ask_loan" >Passport</input>
+						<input type = "checkbox" name ="ask_loan" >Driving License</input>
+					</td>
+				</tr>
+				
+				<tr>
+					<td class = "textStyle" required>Loan Amount</td>
+					<td>
+						<select id = "loanAmt" size="1">
+							<option value="selectTitle">Loan Amount</option>
+							<option value="Mr.">50,000 to 100,000</option>
+							<option value="Miss.">100,001 to 200,000</option>
+							<option value="Mrs.">200,001 to 300,000</option>
+						</select>
+					</id>
+				</tr>
+				
+				<tr>
+					<td><input type = "submit" name ="apply_loan" id = "id_apply_loan" /></td>
+					<td>
+						
+						<input type = "Reset" name ="reset" id = "id_reset" />
+					</id>
+				</tr>
+				
+
+			
+			
+			
+			
+			
+			</table>
+		
+		</form>
+		
+	</body>
+
+
+
+</html>

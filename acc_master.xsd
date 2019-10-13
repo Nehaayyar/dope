@@ -1,0 +1,30 @@
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<!-- definition of simple elements -->
+	<xs:element name="account_no" type="xs:string"/>
+	<xs:element name="accountHolder_name" type="xs:string"/>
+	<xs:element name="accountHolder_address" type="xs:string"/>
+	
+	
+	<!-- definition of complex elements -->
+
+	<xs:element name="records">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="account_no"/>
+				<xs:element ref="accountHolder_name"/>
+				<xs:element ref="accountHolder_address"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="acc_master">
+		<xs:complexType>
+			<xs:sequence>
+				
+				<xs:element ref="records" maxOccurs="unbounded"/>
+			</xs:sequence>
+
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
